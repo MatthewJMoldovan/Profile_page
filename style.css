@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Nav bar */
+.nav{
+    width: 1200px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.nav >h1{
+    margin-left: 175px;
+    margin-right: 10px;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.signOut{
+    width: 120px;
+    height: 30px;
+    margin-left: 200px;
+    background-color:#16a2b8;
+    color: white;
+    font-size: 1.15em;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+}
+
+ul>li{
+    margin: 20px;
+}
+
+.nav > ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+    font-weight: 200;
+}
+
+/* main body */
+.main{
+    width: 850px;
+    height: 700px;
+    margin-top: 35px;
+    margin-left: 175px;
+    margin-right: 175px;
+    display: flex;
+}
+
+.mainLeft{
+    width: 540px;
+    height: 700px;
+    margin-right: 30px;
+
+}
+
+.mainRight{
+    width: 460px;
+    height: 700px;
+}
+
+.cardHead{
+    width: 540px;
+    height: 105px;
+    background-color: #16a2b8;
+    border-radius: 3px;
+}
+
+.cardBody{
+    width: 509px;
+    height: 215px;
+    border: solid 3px #cdcdcd;
+    border-top-style: none;
+    padding-top: 50px;
+    padding-left: 25px;
+    font-size: 1.2em;
+}
+
+
+
+#profilePic{
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    outline: solid 2px black;
+    margin-top: 50px;
+    margin-left: 25px;
+
+}
+
+.cardBody img{
+    width:15px;
+}
+
+.location, .editprofile{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.location > p, .editprofile > a{
+    margin-left: 10px;
+}
+
+
+.eduCard{
+    width: 540px;
+    height: 178px;
+    margin-top: 30px;
+}
+
+.eduHead{
+    width: 515px;
+    height: 50px;
+    background-color: #333333;
+    color: white;
+    border-radius: 3px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.eduBody{
+    width: 509px;
+    height: 125px;
+    border: solid 3px #cdcdcd;
+    padding-left: 25px;
+    border-bottom: none;
+}
+
+.eduBody > h1 {
+    font-size: 1.7em;
+    font-weight: 500;
+    margin: 10px 0px 10px 0px;
+}
+
+.eduBody > p {
+    margin: 10px 0px 10px 0px;
+    font-size: 1.3em;
+}
+
+.eduBodyText{
+    font-weight:500;
+}
+
+.requests{
+    width: 284px;
+    height: 190px;
+}
+
+.requestsHead{
+    width: 264px;
+    height: 50px;
+    background-color: #333333;
+    color: white;
+    border-radius: 3px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.requestsBody{
+    width: 278px;
+    height: 120px;
+    border: solid 3px #cdcdcd;
+    border-top: none;
+}
+
+.requestsNumber{
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    text-align: center;
+    margin-left: px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.toddE{
+    width: 270px;
+    height: 50px;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.yesNo {
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 7px;
+}
+
+.toddimg{
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.toddE > p {
+    margin-left: 15px;
+    margin-right: 60px;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.phillK{
+    width: 270px;
+    height: 50px;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.phillimg{
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+
+.phillK > p {
+    margin-left: 15px;
+    margin-right: 65px;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.connections{
+    width: 284px;
+    height: 360px;
+}
+
+.connectionsBody{
+    width: 278px;
+    height: 230px;
+    border: solid 3px #cdcdcd;
+    border-top: none;
+}
+.connectionsHead{
+    width: 264px;
+    height: 50px;
+    background-color: #333333;
+    color: white;
+    border-radius: 3px;
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.connectionsNumber{
+    width: 70px;
+    height: 35px;
+    background-color: grey;
+    text-align: center;
+    padding-top: 7px;
+    margin-left: 5px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.adrienD{
+    width: 270px;
+    height: 50px;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.adrienimg{
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.adrienD > p {
+    margin-left: 15px;
+    margin-right: 65px;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.anneJ{
+    width: 270px;
+    height: 50px;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.anneimg{
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.anneJ > p {
+    margin-left: 15px;
+    margin-right: 65px;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.alayneT{
+    width: 270px;
+    height: 50px;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.alayneimg{
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.alayneT > p {
+    margin-left: 15px;
+    margin-right: 65px;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.arryY{
+    width: 270px;
+    height: 50px;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.arryimg{
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.arryY > p {
+    margin-left: 15px;
+    margin-right: 65px;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.connectionsFooter{
+    width: 268px;
+    height: 53px;
+    border: solid 3px #cdcdcd;
+    border-top: none;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
