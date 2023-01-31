@@ -25,14 +25,14 @@
                 <img src="images\Matt.jpg" alt="Matthew Moldovan" id="profilePic">
             </div>
             <div class="cardBody">
-                <h1>Matthew Moldovan</h1>
+                <h1 id="userName">Matthew Moldovan</h1>
                     <div class="location">
                         <img src="icons\map-marker.png" alt="Map Marker"> <br> <p>Boise, Idaho</p>
                     </div>
                 <p>Snowboarder | Golfer | Pro Home Cook</p>
                 <p>Die with memories, not dreams</p>
-                <div class="editprofile">
-                    <img src="icons\gear.png" alt="settings image"> <a href="#">edit profile</a>
+                <div onclick="nameChange()" class="editprofile">
+                    <img onclick="nameChange()" src="icons\gear.png" alt="settings image"> <a href="#">edit profile</a>
                 </div>
             </div>
             <div class="eduCard">
@@ -49,27 +49,27 @@
         <div class="mainRight">
             <div class="requests">
                 <div class="requestsHead">
-                    <p class="requestsNumber">2</p>
+                    <p class="requestsNumber" id="requestNumber">2</p>
                     <p>Connection Requests</p>
                 </div>
                 <div class="requestsBody">
-                    <div class="toddE">
+                    <div class="toddE" id="toddDiv">
                         <img class="toddimg" src="images\todd-s.jpg" alt="Todd E">
                         <p>Todd E</p>
-                        <img class="yesNo" src="icons\accept-circle.png" alt="Accept Circle">
-                        <img class="yesNo" src="icons\close-circle.png" alt="Close Circle">
+                        <img onclick="requestDown(), connectUp(), hide(todd)" class="yesNo" src="icons\accept-circle.png" alt="Accept Circle">
+                        <img onclick="requestDown(), hide(todd)" class="yesNo" src="icons\close-circle.png" alt="Close Circle">
                     </div>
-                    <div class="phillK">
+                    <div class="phillK" id="phillDiv">
                         <img src="images\phil-s.jpg" alt="Phil K" class="phillimg">
                         <p>Phill K</p>
-                        <img class="yesNo" src="icons\accept-circle.png" alt="Accept Circle">
-                        <img class="yesNo" src="icons\close-circle.png" alt="Close Circle">
+                        <img onclick="requestDown(), connectUp(), hide(phill)" class="yesNo" src="icons\accept-circle.png" alt="Accept Circle">
+                        <img onclick="requestDown(), hide(phill)" class="yesNo" src="icons\close-circle.png" alt="Close Circle">
                     </div>
                 </div>
             </div>
             <div class="connections">
                 <div class="connectionsHead">
-                    <p class="connectionsNumber">500+</p>
+                    <p id="connectionsNumber" class="connectionsNumber">418</p>
                     <p>Your Connections</p>
                 </div>
                 <div class="connectionsBody">
@@ -96,7 +96,7 @@
             </div>
         </div>
     </div>
-
+<script src="script.js"></script>
 </body>
 
 </html>
